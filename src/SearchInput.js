@@ -2,7 +2,11 @@ import React from 'react';
 
 class SearchInput extends React.Component {
   render() {
-    return <div>Welcome to SearchInput</div>;
+    return (
+      <div>
+        <input />
+      </div>
+    );
   }
 }
 

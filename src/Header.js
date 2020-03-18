@@ -2,7 +2,7 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
-    return <div>Welcome to Header</div>;
+    return <header>Emoji Search</header>;
   }
 }
 
