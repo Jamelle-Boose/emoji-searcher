@@ -1,9 +1,11 @@
 import React from 'react';
 
 class SearchInput extends React.Component {
-  handleChange = () => {
-    console.log(`You changed the search input`);
+  handleChange = event => {
+    // console.log(`You changed the search input`);
+    this.props.textChange(event);
   };
+
   render() {
     return (
       <div>
