@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import SearchInput from './SearchInput';
 import EmojiResults from './EmojiResults';
+import emojiList from './emojiList.json';
 
 class App extends React.Component {
   handleSearchChange = event => {
@@ -12,22 +13,7 @@ class App extends React.Component {
       <div>
         <Header />
         <SearchInput textChange={this.handleSearchChange} />
-        <EmojiResults
-          emojiData={[
-            {
-              title: 'Fire',
-              symbol: '🔥'
-            },
-            {
-              title: 'Grinning',
-              symbol: '😃'
-            },
-            {
-              title: 'Smile Cat',
-              symbol: '😺'
-            }
-          ]}
-        />
+        <EmojiResults emojiData={emojiList} />
       </div>
     );
   }
