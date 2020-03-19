@@ -5,15 +5,23 @@ import EmojiResults from './EmojiResults';
 import emojiList from './emojiList.json';
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      filteredEmoji: emojiList
+    };
+  }
+
   handleSearchChange = event => {
     console.log(`search input changed to:`, event.target.value);
   };
+
   render() {
     return (
       <div>
         <Header />
         <SearchInput textChange={this.handleSearchChange} />
-        <EmojiResults emojiData={emojiList} />
+        <EmojiResults emojiData={this.state.filteredEmoji} />
       </div>
     );
   }
