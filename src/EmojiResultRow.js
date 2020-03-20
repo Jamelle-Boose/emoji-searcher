@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './EmojiResultRow.css';
 
 class EmojiResultRow extends React.Component {
   render() {
