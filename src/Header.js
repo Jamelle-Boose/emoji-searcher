@@ -2,7 +2,7 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
-    return <header>Emoji Search</header>;
+    return <header className='component-header'>Emoji Search</header>;
   }
 }
 
