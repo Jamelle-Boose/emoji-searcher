@@ -9,9 +9,9 @@ class EmojiResultRow extends React.Component {
     const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
 
     return (
-      <div className='component-emoji-results-row'>
+      <div className='component-emoji-result-row'>
         <img alt={title} src={src} />
-        <span>{title}</span>
+        <span className='title'>{title}</span>
       </div>
     );
   }
