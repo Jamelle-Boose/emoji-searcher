@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
-import SearchInput from './SearchInput';
-import EmojiResults from './EmojiResults';
-import filterEmoji from './filterEmoji';
+import Header from './header/Header';
+import SearchInput from './search/SearchInput';
+import EmojiResults from './results/EmojiResults';
+import filterEmoji from './common/filterEmoji';
 
 export default class App extends React.Component {
   constructor() {
