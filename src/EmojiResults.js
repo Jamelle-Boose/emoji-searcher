@@ -5,7 +5,11 @@ import Clipboard from 'clipboard';
 import EmojiResultRow from './EmojiResultRow';
 import './EmojiResults.css';
 
-class EmojiResults extends React.Component {
+export default class EmojiResults extends React.Component {
+  static propTypes = {
+    emojiData: PropTypes.array
+  };
+
   componentDidMount() {
     this.clipboard = new Clipboard('.copy-to-clipboard');
   }
@@ -32,9 +36,3 @@ class EmojiResults extends React.Component {
     );
   }
 }
-
-EmojiResults.propTypes = {
-  emojiData: PropTypes.array
-};
-
-export default EmojiResults;

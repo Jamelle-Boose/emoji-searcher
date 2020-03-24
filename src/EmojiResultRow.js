@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './EmojiResultRow.css';
 
-class EmojiResultRow extends React.Component {
+export default class EmojiResultRow extends React.Component {
+  static propTypes = {
+    title: PropTypes.string,
+    symbol: PropTypes.string
+  };
+
   render() {
     const { title, symbol } = this.props;
     const codePointHex = symbol.codePointAt(0).toString(16);
@@ -19,10 +24,3 @@ class EmojiResultRow extends React.Component {
     );
   }
 }
-
-EmojiResultRow.propTypes = {
-  title: PropTypes.string,
-  symbol: PropTypes.string
-};
-
-export default EmojiResultRow;

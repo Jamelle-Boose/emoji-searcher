@@ -4,7 +4,7 @@ import SearchInput from './SearchInput';
 import EmojiResults from './EmojiResults';
 import filterEmoji from './filterEmoji';
 
-class App extends React.Component {
+export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -29,5 +29,3 @@ class App extends React.Component {
     );
   }
 }
-
-export default App;

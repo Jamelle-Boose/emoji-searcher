@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 
 import './SearchInput.css';
 
-class SearchInput extends React.Component {
+export default class SearchInput extends React.Component {
+  static propType = {
+    textChange: PropTypes.func
+  };
+
   handleChange = event => {
     // console.log(`You changed the search input`);
     this.props.textChange(event);
@@ -19,9 +23,3 @@ class SearchInput extends React.Component {
     );
   }
 }
-
-SearchInput.propType = {
-  textChange: PropTypes.func
-};
-
-export default SearchInput;
