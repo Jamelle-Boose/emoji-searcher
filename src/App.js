@@ -15,7 +15,7 @@ class App extends React.Component {
   handleSearchChange = event => {
     // console.log(`search input changed to:`, event.target.value);
     this.setState({
-      filteredEmoji: filterEmoji('event.target.value', 20)
+      filteredEmoji: filterEmoji(event.target.value, 20)
     });
   };
 
